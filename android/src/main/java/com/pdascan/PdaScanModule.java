@@ -87,30 +87,30 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
           params);
     }
 
-  @ReactMethod
-    public void scanRegisterBroadCast() {
-        Activity currentActivity = getReactApplicationContext().getCurrentActivity();
-        IntentFilter filter = new IntentFilter();
-        filter.addAction(XM_SCAN_ACTION);
-        currentActivity.registerReceiver(scanReceiver, filter);
+  // @ReactMethod
+  //   public void scanRegisterBroadCast() {
+  //       Activity currentActivity = getReactApplicationContext().getCurrentActivity();
+  //       IntentFilter filter = new IntentFilter();
+  //       filter.addAction(XM_SCAN_ACTION);
+  //       currentActivity.registerReceiver(scanReceiver, filter);
 
 
-        IntentFilter filter2 = new IntentFilter();
-        filter2.addAction(XM_SCAN_ACTION2);
-        currentActivity.registerReceiver(scanReceiver, filter2);
+  //       IntentFilter filter2 = new IntentFilter();
+  //       filter2.addAction(XM_SCAN_ACTION2);
+  //       currentActivity.registerReceiver(scanReceiver, filter2);
 
-    }
+  //   }
 
-    @ReactMethod
-    public void scanUnRegisterBroadCast() {
-        try {
-            Activity currentActivity = getReactApplicationContext().getCurrentActivity();
-            currentActivity.unregisterReceiver(scanReceiver);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+  //   @ReactMethod
+  //   public void scanUnRegisterBroadCast() {
+  //       try {
+  //           Activity currentActivity = getReactApplicationContext().getCurrentActivity();
+  //           currentActivity.unregisterReceiver(scanReceiver);
+  //       } catch (Exception e) {
+  //           e.printStackTrace();
+  //       }
 
-    }
+  //   }
 
 
     public PdaScanModule(ReactApplicationContext reactContext) {
