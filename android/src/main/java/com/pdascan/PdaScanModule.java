@@ -26,6 +26,21 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
     private static final String PL_SCAN_ACTION = "scan.rcv.message";
     private static final String BARCODE_DATA_ACTION = "com.ehsy.warehouse.action.BARCODE_DATA";
     private static final String HONEYWELL_SCAN_ACTION = "com.honeywell.decode.intent.action.EDIT_DATA";
+
+
+    private static final String MOBYDATA_SCAN_ACTION = "android.intent.action.SCANRESULT";
+
+    private static final String MOBYDATA_SCAN_EXT_STRING = "com.android.decode.intentwedge.barcode_string";
+
+    private String selectValue(Intent intent){
+
+      if(intent.getStringExtra("value")!=null && !intent.getStringExtra("value").trim().isEmpty()){
+        return intent.getStringExtra("value");
+      }
+      return intent.getStringExtra(MOBYDATA_SCAN_EXT_STRING);
+
+    }
+
     private final BroadcastReceiver scanReceiver = new BroadcastReceiver() {
       @Override
       public void onReceive(Context context, Intent intent) {
@@ -35,7 +50,15 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
             if (XM_SCAN_ACTION.equals(actionName)) {
               params.putString("code", intent.getStringExtra("scannerdata"));
             } else if (IDATA_SCAN_ACTION.equals(actionName)) {
-              params.putString("code", intent.getStringExtra("value"));
+
+
+              params.putString("code", selectValue(intent));
+
+              // params.putString("code", intent.getStringExtra(XM_SCAN_EXT_STRING));
+              // params.putString("type", intent.getStringExtra(XM_SCAN_EXT_TYPE));
+              // params.putString("data", new String(intent.getByteArrayExtra(XM_SCAN_EXT_DATA), StandardCharsets.UTF_8));
+
+
             } else if (YBX_SCAN_ACTION.equals(actionName)) {
               params.putString("code", intent.getStringExtra("barcode_string"));
             } else if (PL_SCAN_ACTION.equals(actionName)) {
