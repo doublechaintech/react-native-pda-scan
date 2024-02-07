@@ -86,36 +86,63 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
       getReactApplicationContext().getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit(eventName,
           params);
     }
+
+  @ReactMethod
+    public void scanRegisterBroadCast() {
+        Activity currentActivity = getReactApplicationContext().getCurrentActivity();
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(XM_SCAN_ACTION);
+        currentActivity.registerReceiver(scanReceiver, filter);
+
+
+        IntentFilter filter2 = new IntentFilter();
+        filter2.addAction(XM_SCAN_ACTION2);
+        currentActivity.registerReceiver(scanReceiver, filter2);
+
+    }
+
+    @ReactMethod
+    public void scanUnRegisterBroadCast() {
+        try {
+            Activity currentActivity = getReactApplicationContext().getCurrentActivity();
+            currentActivity.unregisterReceiver(scanReceiver);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
     public PdaScanModule(ReactApplicationContext reactContext) {
       
         super(reactContext);
-        Log.i("PdaScannerPlugin", "PdaScanModule start"+getReactApplicationContext().getClass().getName());
-        
+        Log.i("PdaScannerPlugin", "PdaScanModule start: "+getReactApplicationContext().getClass().getName());
+        Activity currentActivity = getReactApplicationContext().getCurrentActivity();
         this.reactContext = reactContext;
         IntentFilter xmIntentFilter = new IntentFilter();
         xmIntentFilter.addAction(XM_SCAN_ACTION);
         xmIntentFilter.setPriority(Integer.MAX_VALUE);
-        getReactApplicationContext().registerReceiver(scanReceiver, xmIntentFilter);
+        currentActivity.registerReceiver(scanReceiver, xmIntentFilter);
         IntentFilter iDataIntentFilter = new IntentFilter();
         iDataIntentFilter.addAction(IDATA_SCAN_ACTION);
         iDataIntentFilter.setPriority(Integer.MAX_VALUE);
-        getReactApplicationContext().registerReceiver(scanReceiver, iDataIntentFilter);
+        currentActivity.registerReceiver(scanReceiver, iDataIntentFilter);
         IntentFilter yBoXunIntentFilter = new IntentFilter();
         yBoXunIntentFilter.addAction(YBX_SCAN_ACTION);
         yBoXunIntentFilter.setPriority(Integer.MAX_VALUE);
-        getReactApplicationContext().registerReceiver(scanReceiver, yBoXunIntentFilter);
+        currentActivity.registerReceiver(scanReceiver, yBoXunIntentFilter);
         IntentFilter pLIntentFilter = new IntentFilter();
         pLIntentFilter.addAction(PL_SCAN_ACTION);
         pLIntentFilter.setPriority(Integer.MAX_VALUE);
-        getReactApplicationContext().registerReceiver(scanReceiver, pLIntentFilter);
+        currentActivity.registerReceiver(scanReceiver, pLIntentFilter);
         IntentFilter honeyIntentFilter = new IntentFilter();
         honeyIntentFilter.addAction(BARCODE_DATA_ACTION);
         honeyIntentFilter.setPriority(Integer.MAX_VALUE);
-        getReactApplicationContext().registerReceiver(scanReceiver, honeyIntentFilter);
+        currentActivity.registerReceiver(scanReceiver, honeyIntentFilter);
         IntentFilter honeywellIntentFilter = new IntentFilter();
         honeywellIntentFilter.addAction(HONEYWELL_SCAN_ACTION);
         honeywellIntentFilter.setPriority(Integer.MAX_VALUE);
-        getReactApplicationContext().registerReceiver(scanReceiver, honeywellIntentFilter);
+        currentActivity.registerReceiver(scanReceiver, honeywellIntentFilter);
         Log.i("PdaScannerPlugin", "PdaScanModule registerer done");
 
 
