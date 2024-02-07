@@ -51,7 +51,17 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
             String actionName = intent.getAction();
             if (XM_SCAN_ACTION.equals(actionName)) {
               params.putString("code", intent.getStringExtra("scannerdata"));
-            } else if (IDATA_SCAN_ACTION.equals(actionName)) {
+            } else if (MOBYDATA_SCAN_ACTION.equals(actionName)) {
+
+
+              params.putString("code", selectValue(intent));
+
+              // params.putString("code", intent.getStringExtra(XM_SCAN_EXT_STRING));
+              // params.putString("type", intent.getStringExtra(XM_SCAN_EXT_TYPE));
+              // params.putString("data", new String(intent.getByteArrayExtra(XM_SCAN_EXT_DATA), StandardCharsets.UTF_8));
+
+
+            }else if (IDATA_SCAN_ACTION.equals(actionName)) {
 
 
               params.putString("code", selectValue(intent));
@@ -99,6 +109,14 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
         iDataIntentFilter.addAction(IDATA_SCAN_ACTION);
         iDataIntentFilter.setPriority(Integer.MAX_VALUE);
         currentActivity.registerReceiver(scanReceiver, iDataIntentFilter);
+
+        IntentFilter mobyDataFilter = new IntentFilter();
+        mobyDataFilter.addAction(MOBYDATA_SCAN_ACTION);
+        mobyDataFilter.setPriority(Integer.MAX_VALUE);
+        currentActivity.registerReceiver(scanReceiver, mobyDataFilter);
+
+
+
         IntentFilter yBoXunIntentFilter = new IntentFilter();
         yBoXunIntentFilter.addAction(YBX_SCAN_ACTION);
         yBoXunIntentFilter.setPriority(Integer.MAX_VALUE);
