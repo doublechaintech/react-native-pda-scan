@@ -136,8 +136,8 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
       
         super(reactContext);
         Log.i("PdaScannerPlugin", "PdaScanModule start: "+getReactApplicationContext().getClass().getName());
-        this.reactContext = reactContext
-        
+        this.reactContext = reactContext;
+
 
     }
 
