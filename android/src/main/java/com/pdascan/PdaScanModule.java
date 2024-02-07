@@ -26,9 +26,8 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
     private static final String PL_SCAN_ACTION = "scan.rcv.message";
     private static final String BARCODE_DATA_ACTION = "com.ehsy.warehouse.action.BARCODE_DATA";
     private static final String HONEYWELL_SCAN_ACTION = "com.honeywell.decode.intent.action.EDIT_DATA";
-
-
-    private static final String MOBYDATA_SCAN_ACTION = "android.intent.action.SCANRESULT";
+    
+    private static final String MOBYDATA_SCAN_ACTION = "com.android.decodewedge.decode_action";
 
     private static final String MOBYDATA_SCAN_EXT_STRING = "com.android.decode.intentwedge.barcode_string";
 
