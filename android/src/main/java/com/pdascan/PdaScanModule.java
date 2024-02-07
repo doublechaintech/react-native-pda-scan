@@ -45,7 +45,7 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
       @Override
       public void onReceive(Context context, Intent intent) {
 
-        Log.i("PdaScannerPlugin",intent.getAction()+":");
+        Log.i("PdaScannerPlugin",intent.getAction()+":"+intent.getStringExtra("value")+"/"+intent.getStringExtra(MOBYDATA_SCAN_EXT_STRING));
 
           try {
             WritableMap params = Arguments.createMap();
