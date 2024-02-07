@@ -90,7 +90,7 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
   @ReactMethod
     public void scanRegisterBroadCast() {
        Activity currentActivity = getReactApplicationContext().getCurrentActivity();
-        this.reactContext = reactContext;
+        
         IntentFilter xmIntentFilter = new IntentFilter();
         xmIntentFilter.addAction(XM_SCAN_ACTION);
         xmIntentFilter.setPriority(Integer.MAX_VALUE);
@@ -136,8 +136,8 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
       
         super(reactContext);
         Log.i("PdaScannerPlugin", "PdaScanModule start: "+getReactApplicationContext().getClass().getName());
+        this.reactContext = reactContext
         
-
 
     }
 
