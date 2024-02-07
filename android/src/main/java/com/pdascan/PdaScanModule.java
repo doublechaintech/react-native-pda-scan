@@ -89,7 +89,7 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
     public PdaScanModule(ReactApplicationContext reactContext) {
       
         super(reactContext);
-        Log.i("PdaScannerPlugin", "PdaScanModule start");
+        Log.i("PdaScannerPlugin", "PdaScanModule start"+getReactApplicationContext().getClass().getName());
         
         this.reactContext = reactContext;
         IntentFilter xmIntentFilter = new IntentFilter();
@@ -116,6 +116,9 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
         honeywellIntentFilter.addAction(HONEYWELL_SCAN_ACTION);
         honeywellIntentFilter.setPriority(Integer.MAX_VALUE);
         getReactApplicationContext().registerReceiver(scanReceiver, honeywellIntentFilter);
+        Log.i("PdaScannerPlugin", "PdaScanModule registerer done");
+
+
     }
 
     @Override
