@@ -44,6 +44,9 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
     private final BroadcastReceiver scanReceiver = new BroadcastReceiver() {
       @Override
       public void onReceive(Context context, Intent intent) {
+
+        Log.i("PdaScannerPlugin",intent.getAction()+":");
+
           try {
             WritableMap params = Arguments.createMap();
             String actionName = intent.getAction();
