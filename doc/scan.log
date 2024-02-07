@@ -1,0 +1,361 @@
+
+
+02-07 11:43:51.210   938   956 V WindowOrientationListener: Proposed rotation changed!  proposedRotation=1, oldProposedRotation=-1
+02-07 11:43:45.559   938  1041 I chatty  : uid=1000(system) WifiStateMachin identical 1 line
+02-07 11:43:48.570   938  1041 E WifiVendorHal: getWifiLinkLayerStats(l.937) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+02-07 11:43:51.211   938   956 I WindowManager: rotationForOrientationLw.java:deviceName: m71
+02-07 11:43:51.366   559   559 I thermal_repeater: [recvMdThermalInfo] ret=28, strLen=127,  2, 32767, -127, 0, 32767, 0
+02-07 11:43:51.588   938  1041 E WifiVendorHal: getWifiLinkLayerStats(l.937) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+02-07 11:43:52.373   938  1028 D InputReader: updateMetaStateIfNeeded - newMetaState = 0x0
+02-07 11:43:52.373   938  1028 D InputDispatcher: notifyKey - eventTime=11253156105000, deviceId=5, source=0x101, policyFlags=0x0, action=0x0, flags=0x8, keyCode=0x125, scanCode=0x13d, metaState=0x0, downTime=11253156105000
+02-07 11:43:52.373   938  1028 D InputDispatcher: convert_keycode - scan_code = 317 key_code = 293 metaState = 0x0 mapping_keycode = -1 mapping_metaState = 0x0 go_keyremap = 0
+02-07 11:43:52.373   938  1028 D WindowManager: interceptKeyBeforeQueueing down=true metaState = 0 scanCode = 317
+02-07 11:43:52.375   938  1027 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1006 com.android.server.policy.PhoneWindowManager.interceptKeyBeforeDispatching:4101 com.android.server.wm.InputMonitor.interceptKeyBeforeDispatching:478 com.android.server.input.InputManagerService.interceptKeyBeforeDispatching:2014 <bottom of call stack> 
+02-07 11:43:52.377  1702  2096 E MD#SS   : Trigger gap --------------------->24026 (ms)
+02-07 11:43:52.377  1702  2096 V MD#SS   :  ++ Scan Trigger ++ 
+02-07 11:43:52.377  1702  2135 D MD#LNT  :  handleMessage msg.what =1
+02-07 11:43:52.377  1702  2096 V MD#SSMB : Old -> READY   Get -> START DECODE
+02-07 11:43:52.377  1702  2135 D MD#LNT  :  stop Led Notifications 
+02-07 11:43:52.377  1702  2096 V MD#SSM  : ReadyStateHandler msg = START DECODE
+02-07 11:43:52.377  1702  2096 V MD#SSM  : ReadyStateHandler startControllerDecode--START DECODE--1707277432377
+02-07 11:43:52.377  1702  2096 V MD#SSM  : startControllerDecode with timeout 5000
+02-07 11:43:52.377  1702  2138 D MD#ANT  :  handleMessage msg.what =1
+02-07 11:43:52.377  1702  2138 W MD#Beeper: stopBeep already stopped, ignored!
+02-07 11:43:52.377  1702  2096 V MD#SHD  : startDecode--1707277432377
+02-07 11:43:52.377  1702  2108 V MD#CMD  : ++ PHASE_ON ++ mPhaseOnCount = 63--1707277432377
+02-07 11:43:52.377  1702  2096 V MD#SS   : Sending to ScannerServer FSM
+02-07 11:43:52.378  1702  2096 V MD#SSMB : READY -> IN PROGRESS
+02-07 11:43:52.378  1702  1755 V MD#SS   : onStartEvent, updating listeners
+02-07 11:43:52.378  1702  2096 V MD#SSMB : New-> IN PROGRESS
+02-07 11:43:52.378  1702  1755 V MD#SS   :  onstart mEngineStartTime =1707277432378
+02-07 11:43:52.378  1702  2135 D MD#LNT  :  handleMessage msg.what =5
+02-07 11:43:52.378  1702  2135 D MD#LNT  :  handleMessage SET_LED  red  2 on =1
+02-07 11:43:52.378  1702  2135 I se_hal  : not bypass led
+02-07 11:43:52.378  1702  2080 I se_hal  : ++ se_hw_start ++
+02-07 11:43:52.378   938  1027 D WindowManager: pressTrigger
+02-07 11:43:52.378  1702  2080 I se_hal  :  | ********************* hw Start | ISP start
+02-07 11:43:52.379  1702  2080 D ScanEngine#Proxy: startPreview
+02-07 11:43:52.379   403   403 I scanpass: scanPassIspStart
+02-07 11:43:52.382   403   403 D SeninfDrvImp: [configInputForCSI]sensor index = 1, psensorDynamicInfo->TgInfo = 1; mSeninfMuxUsed[SENINF_MUX1] =1, mSeninfMuxUsed[SENINF_MUX2] = -1
+02-07 11:43:52.382   403   403 D SeninfDrvImp: [setSeninfCSI2]mipi_type 0 CSI2_IP 1
+02-07 11:43:52.382   403   403 D SeninfDrvImp: [Efuse]CSI0 MIPI_RX_ANA08_CSI0A(0xd0d0c0c) MIPI_RX_ANA0C_CSI0A(0xd0d) MIPI_RX_ANA08_CSI0B(0xe0e0e0e) MIPI_RX_ANA0C_CSI0B(0xd0d)
+02-07 11:43:52.382  7824  8006 V Logger  : XT21: 2024-02-07 11:43:52 KEY CODE onKeyDown: 293
+02-07 11:43:52.382   403   403 D SeninfDrvImp: [setSeninfCSI2]CSI0 offset calibration end MIPI_RX_ANA48_CSI0A 0x2229, MIPI_RX_ANA48_CSI0B 0x2029
+02-07 11:43:52.382   403   403 D SeninfDrvImp: [setSeninfCSI2]CSI2-0 TermDelay:0 SettleDelay:30(cnt:21) TermDelay:0 Vsync:1 LaneNum:1 NCSI2_EN:1 HeadOrder:1 ISP_clk:0 dpcm:0 skew:0
+02-07 11:43:52.382   403   403 D SeninfDrvImp: [configInputForCSI]sensor does not provide mipi_pixel_rate
+02-07 11:43:52.392   403   403 D ImgSensorDrv: [setScenario][setScenario]DevID = 1, m_LineTimeInus = 18667 Scenario id = 0, PixelClk = 48000000, PixelInLine = 896, Framelength = 536
+02-07 11:43:52.392   403   403 D ImgSensorDrv: [sendCommand]SET_STREAMING_RESUME, senDev(1),expTime_us is default, keep original value
+02-07 11:43:52.393   403   403 D SeninfDrvImp: [calibrateSensor]pixel_rate 30720000, threshold 1500000000, h 480, w 640, fps 1000,pdaf mode 0
+02-07 11:43:52.393   403   403 D SeninfDrvImp: [calibrateSensor]mipi_pixel_rate 270336000 CSI_DESKEW_THRESHOLD 1500000000
+02-07 11:43:52.393   403   403 W Drv/HWsync: Drv/HWsync[sendCommand] WARNING: NO FrameTimeDelayFrame from sensor_dev:2, set to 1
+02-07 11:43:52.395   403   403 E ifunc_cam: [vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6765/imageio/drv/cam/isp_function_cam.cpp, _config, line0166] ERROR: [0x0]:TG size is smaller than pipeline min width size(960) (_config){#166:vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6765/imageio/drv/cam/isp_function_cam.cpp}
+02-07 11:43:52.397  1702  2080 I se_hal  : -- se_hw_start --
+02-07 11:43:52.394  1702  1702 W HwBinder:1702_1: type=1400 audit(0.0:1304): avc: granted { write } for name="ion" dev="tmpfs" ino=11277 scontext=u:r:system_app:s0 tcontext=u:object_r:ion_device:s0 tclass=chr_file
+02-07 11:43:52.398  1702  2108 V MD#CMD  : -- PHASE_ON --63--1707277432377
+02-07 11:43:52.418  1702  2086 D ScanEngine#Proxy: sensorSetRegister
+02-07 11:43:52.420  1702  2086 D ScanEngine#Proxy: sensorSetRegister
+02-07 11:43:52.421  1702  2106 D MD#SHD  : -- Get EVL result callback --
+02-07 11:43:52.421  1702  2024 E MD#FB   : applySymbologyEnconding encodeDetect = 2
+02-07 11:43:52.421  1702  2024 V MD#SF   : bypass QR ECI 1 =  C.GP.CO2.I.0040
+02-07 11:43:52.421  1702  2024 V MD#SF   : bypass QR ECI 2 =  C.GP.CO2.I.0040
+02-07 11:43:52.421  1702  2024 V MD#SSMB : formatterResultsReady State = IN PROGRESS
+02-07 11:43:52.421  1702  2024 V MD#SSMB : Old -> IN PROGRESS   Get -> SCAN_RESULT
+02-07 11:43:52.421  1702  2024 I se_hal  : notifyDecodeResult, decodeResult = 0
+02-07 11:43:52.422  1702  2024 V MD#SS   : sendBroadcast from ScanStateMachine, sending BARCODE_READY to ScannerServer FSM
+02-07 11:43:52.422  1702  2024 V MD#SSM  : InProgressStateHandler  
+02-07 11:43:52.422  1702  2024 V MD#SSM  : InProgressStateHandler - stopDecode--SCAN_RESULT
+02-07 11:43:52.422  1702  1755 V MD#SS   : onBarcodeDataReceived, updating listeners C.GP.CO2.I.0040
+02-07 11:43:52.422  1702  2138 D MD#ANT  :  handleMessage msg.what =2
+02-07 11:43:52.422  1702  2024 V MD#SHD  : stopDecode--1707277432422
+02-07 11:43:52.422  1702  2135 D MD#LNT  :  handleMessage msg.what =5
+02-07 11:43:52.422  1702  2024 V MD#SS   : Sending onStopEvent to ScannerServer FSM
+02-07 11:43:52.422  1702  2135 D MD#LNT  :  handleMessage SET_LED  red  2 on =0
+02-07 11:43:52.422  1702  2024 V MD#SSMB : IN PROGRESS -> READY
+02-07 11:43:52.422  1702  2108 V MD#CMD  : ++ PHASE_OFF ++ mPhaseOffCount = 63--1707277432422
+02-07 11:43:52.422  1702  2135 I se_hal  : not bypass led
+02-07 11:43:52.422  1702  2024 V MD#SSMB : New-> READY
+02-07 11:43:52.422  1702  1755 V MD#SS   : onStopEvent, updating listeners
+02-07 11:43:52.422  1702  1755 V MD#SS   :  onstop DecodeSucceed 
+02-07 11:43:52.422  1702  2139 D MD#ANT  : AudioNotificationThread wakeup
+02-07 11:43:52.422  1702  2139 D MD#ANT  : AudioNotificationThread  playBeep
+02-07 11:43:52.422  1702  2139 D AudioTrack: setVolume(): 0x75551fb800, left = 0.518800, right = 0.518800
+02-07 11:43:52.422  1702  2139 D AudioTrack: setMarkerPosition: 0x75551fb800, marker = 8820
+02-07 11:43:52.422  1702  2139 D MD#Beeper:   sAudioTrack playBeep
+02-07 11:43:52.422  1702  1757 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1006 android.content.ContextWrapper.sendBroadcast:444 com.mobydata.provider.IntentWedgeThread$1.handleMessage:100 android.os.Handler.dispatchMessage:106 android.os.Looper.loop:193 
+02-07 11:43:52.422  1702  2135 D MD#LNT  :  handleMessage msg.what =2
+02-07 11:43:52.422  1702  2139 E AudioTrack: start(): 0x75551fb800, mState = 1
+02-07 11:43:52.422  1702  2137 D MD#LNT  :  goodReadNotifyThread green on
+02-07 11:43:52.422  1702  2137 I se_hal  : not bypass led
+02-07 11:43:52.422   404   711 D APM_AudioPolicyManager: startOutput() output 13, stream 3, session 113
+02-07 11:43:52.422   404   711 V APM::AudioOutputDescriptor: changeRefCount() stream 3, count 1
+02-07 11:43:52.423  1702  2139 D MD#Beeper: playBeep playing AudioTrack
+02-07 11:43:52.423  1702  2139 D MD#ANT  : AudioNotificationThread sleep
+02-07 11:43:52.424   938   938 V MediaRouter: onRestoreRoute() : route=RouteInfo{ name=手机, description=null, status=null, category=RouteCategory{ name=系统 types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+02-07 11:43:52.424   938   938 V MediaRouter: Selecting route: RouteInfo{ name=手机, description=null, status=null, category=RouteCategory{ name=系统 types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+02-07 11:43:52.425   404   725 D MtkAudioLoud: +close()
+02-07 11:43:52.425   404   725 D MtkAudioLoud: mCustScene = , size = 21 len = 0
+02-07 11:43:52.425   404   725 D MtkAudioLoud: loadParameter HIT Cache Type [5], Scene []
+02-07 11:43:52.425   404   725 D MtkAudioLoud: mIsZeroCoeff 1 mFilterType 5
+02-07 11:43:52.425   404   725 D MtkAudioLoud: setParameter 513 mInitParam.Initial_State 2
+02-07 11:43:52.425   404   725 D MtkAudioLoud: +open()
+02-07 11:43:52.426   404   725 D MtkAudioLoud: -open() result 0
+02-07 11:43:52.427   372  2222 D AudioALSAStreamManager: +syncSharedOutDevice(), routingSharedOutDevice: 2
+02-07 11:43:52.427   372  2222 D AudioALSAStreamManager: -syncSharedOutDevice()
+02-07 11:43:52.427   372  2222 D AudioALSAStreamManager: setMasterVolume(), volume = 1.000000
+02-07 11:43:52.427   372  2222 D AudioMTKGainController: setNormalVolume(), mSceneIndex = 0, stream 3, devices 0x2, index 3, mode 0x0
+02-07 11:43:52.427   372  2222 D AudioMTKGainController: setSpeakerGain(), gain = 10, spkAnaType = 3, spkLMixerName = Lineout_PGAL_GAIN, spkRMixerName = Lineout_PGAR_GAIN
+02-07 11:43:52.427   372  2222 D AudioALSAStreamOut: open(), flags 6
+02-07 11:43:52.427   372  2222 D AudioALSAStreamManager: +createPlaybackHandler(), mAudioMode = 0, output_devices = 0x2, isMixerOut = 0x0, flag = 6
+02-07 11:43:52.428   372  2222 D AudioALSAPlaybackHandlerNormal: +open(), flag 6, mDevice = 0x2
+02-07 11:43:52.428   372  2222 D AudioALSADeviceParser: compare pcm success = 7, stringpair = I2S0DL1_PLayback
+02-07 11:43:52.428   372  2222 D AudioALSAPlaybackHandlerBase: transferAudioFormatToPcmFormat(), audio_format(0x4) => pcm_format(0x1)
+02-07 11:43:52.428   372  2222 D AudioALSAPlaybackHandlerNormal: open(), mConfig: channels = 2, rate = 48000, period_size = 256, period_count = 2, format = 1, avail_min = 256, start_threshold = 512
+02-07 11:43:52.428   372  2222 D AudioALSAPlaybackHandlerNormal: SetLowJitterMode(), bypass low jitter mode, bEnable = 1, device = 0x2, SampleRate = 48000
+02-07 11:43:52.429  1702  2080 I se_hal  : ++ se_hw_stop ++
+02-07 11:43:52.429  1702  2080 I se_hal  :  | ********************* hw Stop  | eloop Start
+02-07 11:43:52.429  1702  2080 I se_hal  :  | ********************* | Time: 0.050425(s) | 3 
+02-07 11:43:52.429  1702  2080 I se_hal  :  
+02-07 11:43:52.429  1702  2080 I se_hal  :  
+02-07 11:43:52.429  1702  2080 I se_hal  : -- se_hw_stop --
+02-07 11:43:52.429  1702  8011 I se_hal  :  | ********************* | Eloop thread start
+02-07 11:43:52.429   372  2222 D AudioALSAPlaybackHandlerBase: openPcmDriverWithFlag(), pcm device = 7 flag = 0x8 mPcm = 0xf0944a80
+02-07 11:43:52.429   372  2222 D AudioALSAPlaybackHandlerBase: CreateAurisysLibManager, voip: 0, mAurisysScenario: 1
+02-07 11:43:52.429   372  2222 D aurisys_utility: input dev: 0x0, fmt = 0x3, fs: 48000, max fs: 48000, ch: 2, max ch: 1, ch maks: 0x3, hw_info_mask: 0x0; output dev: 0x2, fmt = 0x3, fs: 48000, max fs: 48000, ch: 2, max ch: 2, ch maks: 0x3, hw_info_mask: 0x0; task_scene: 2, audio_mode: 0, output_flags: 0x6, input_source: 0, input_flags: 0x0, enhancement_feature_mask: 0x0
+02-07 11:43:52.429   372  2222 D aurisys_utility: lib, working fs: 48000, fmt: 0x3, frame = 0, b_interleave = 1, num_ul_ref_buf_array = 0, num_dl_ref_buf_array = 0
+02-07 11:43:52.429   372  2222 D aurisys_utility: dl in[type:2], ch: 2, ch_mask: 0x0, buf fs: 48000, buf content fs: 48000, fmt: 0x3; dl out[type:3], ch: 2, ch_mask: 0x0, buf fs: 48000, buf content fs: 48000, fmt: 0x3
+02-07 11:43:52.429   372  2222 D AudioCompFltCustParam: getPlaybackPostProcessParameterFromXML Type/Name [5]/[PlaybackDRC]
+02-07 11:43:52.430   372  2222 D AudioCompFltCustParam: getPlaybackPostProcessParameterFromXML Type/Name [0]/[PlaybackACF]
+02-07 11:43:52.430   372  2222 D aurisys_lib_handler: aurisys_arsi_parsing_param_file(), gProductInfo "platform=invalid,device=m71,model=m71", file_path "/vendor/etc/audio_param", enhancement_mode 0, param_buf_size 2528, data_size 2528
+02-07 11:43:52.430   372  2222 D aurisys_lib_handler: aurisys_arsi_create_handler(), lib_name mtk_bessound, 0xee388c40, memory_size 72532, arsi_handler 0xee3b7980, retval 0
+02-07 11:43:52.430   372  2222 D aurisys_lib_handler: aurisys_arsi_create_handler(), arsi_query_process_unit_bytes, ul 0, dl 512, retval 0
+02-07 11:43:52.430   372  2222 D aurisys_lib_manager: DL Lib, lib_name mtk_bessound, 0xee388c40, sample_rate: 48000 => 48000, num_channels: 2 => 2, audio_format: 0x3 => 0x3, interleave: 1 => 1, frame: 0 => 0
+02-07 11:43:52.430   372  2222 D aurisys_lib_manager: DL out, sample_rate: 48000 => 48000, num_channels: 2 => 2, audio_format: 0x3 => 0x4, interleave: 1 => 1, frame: 0 => 0
+02-07 11:43:52.430   372  2222 D AudioALSAHardwareResourceManager: +startOutputDevice(), new_devices = 0x2, mOutputDevices = 0x0, mStartOutputDevicesCount = 0 SampleRate = 48000
+02-07 11:43:52.430   372  2222 D AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName() DeviceName = speaker_output descriptor->DeviceStatusCounte = 0
+02-07 11:43:52.431   372  2222 D AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName() DeviceName = ext_speaker_output descriptor->DeviceStatusCounte = 0
+02-07 11:43:52.488  1702  2091 I se_hal  : ---> OK 40
+02-07 11:43:52.497   372  2222 D AudioALSAStreamManager: speakerStatusChangeCb(), status = 0
+02-07 11:43:52.497   372  2222 D AudioVoiceUIDL: [GetSRCInputParameter] mOutputSampleRate 16000,  mInputSampleRate 48000, mInChannel 2, mOutChannel, 0 format 4
+02-07 11:43:52.497   372  2222 D AudioVoiceUIDL: [GetSRCInputParameter] create SRC handle fail
+02-07 11:43:52.497   372  2222 D AudioALSAPlaybackHandlerNormal: -open()
+02-07 11:43:52.498   372  2222 E AudioALSAPlaybackHandlerBase: -getHardwareBufferInfo(), pcm_get_htimestamp fail, ret = -1, pcm_get_error = 
+02-07 11:43:52.527  1702  2091 I se_hal  : <--- OK 35
+02-07 11:43:52.534  1702  2108 V MD#CMD  : -- PHASE_OFF --63--1707277432422
+02-07 11:43:52.551   412   440 I BufferQueueProducer: [com.skynet.rnapp.gascms/com.rnapp.MainActivity#1](this:0x7597b8c800,id:73,api:1,p:7824,c:412) queueBuffer: fps=0.05 dur=19287.88 max=19287.88 min=19287.88
+02-07 11:43:52.565   412   412 I SurfaceFlinger: [Built-in Screen (type:0)] fps:0.051826,dur:19295.45,max:19295.45,min:19295.45
+02-07 11:43:52.691   516   538 D AAL     : 02-07 11:43:52.632 BL= 797,ESS= 256, 02-07 11:43:52.639 BL= 796,ESS= 256, 02-07 11:43:52.656 BL= 795,ESS= 256, 02-07 11:43:52.673 BL= 794,ESS= 256, 02-07 11:43:52.691 BL= 793,ESS= 256, 
+02-07 11:43:52.708  1702  2138 D MD#Beeper:   sAudioTrack onMarkerReached
+02-07 11:43:52.708  1702  2138 D AudioTrack: pause(): 0x75551fb800, mState = 0
+02-07 11:43:52.717   404   725 D AudioFlinger_Threads: pause signal - [NOT READY] on thread
+02-07 11:43:52.718  1702  2138 D AudioTrack: stop(): 0x75551fb800, mState = 2
+02-07 11:43:52.723  1702  2138 D AudioTrack: audiotrack 0x75551fb800 stop done
+02-07 11:43:52.775   531   531 E DrmMtkUtil/DrmUtil: checkDcf: not dcf type, dcf version value [80]
+02-07 11:43:52.775   531   531 E Cta5File: Cta5File::isCta5NormalFile false, bad magic:PK
+02-07 11:43:52.775   531   531 E Cta5File: Cta5File::isCta5MultimediaFile false, bad magic:
+02-07 11:43:52.775   531   531 D NuPlayerDriver: NuPlayerDriver(0xf313b280) created, clientPid(7824)
+02-07 11:43:52.777   516   538 D AAL     : 02-07 11:43:52.708 BL= 792,ESS= 256, 02-07 11:43:52.725 BL= 791,ESS= 256, 02-07 11:43:52.742 BL= 790,ESS= 256, 02-07 11:43:52.759 BL= 789,ESS= 256, 02-07 11:43:52.777 BL= 788,ESS= 256, 
+02-07 11:43:52.782   531  8015 D GenericSource: FileSource remote
+02-07 11:43:52.784   528  7996 V APEExtractor: getAPEInfo id3 tag 0, len 31
+02-07 11:43:52.784   528  7996 E APEExtractor: getAPEInfo not ape 20530
+02-07 11:43:52.787   404   725 D MtkAudioLoud: +close()
+02-07 11:43:52.787   404   725 D MtkAudioLoud: -close()
+02-07 11:43:52.788   528  7996 D TableOfContentThread: TableOfContentThread Construct !0x7e1353f808
+02-07 11:43:52.789   938  1028 D InputReader: updateMetaStateIfNeeded - newMetaState = 0x0
+02-07 11:43:52.789   938  1028 D InputDispatcher: notifyKey - eventTime=11253572296000, deviceId=5, source=0x101, policyFlags=0x0, action=0x1, flags=0x8, keyCode=0x125, scanCode=0x13d, metaState=0x0, downTime=11253156105000
+02-07 11:43:52.789   938  1028 D InputDispatcher: convert_keycode - scan_code = 317 key_code = 293 metaState = 0x0 mapping_keycode = -1 mapping_metaState = 0x0 go_keyremap = 0
+02-07 11:43:52.789   938  1028 D WindowManager: interceptKeyBeforeQueueing down=false metaState = 0 scanCode = 317
+02-07 11:43:52.791  1702  2096 V MD#SS   :  -- Scan Trigger -- 
+02-07 11:43:52.791  1702  2096 V MD#SSMB : Old -> READY   Get -> RELEASE TRIGGER
+02-07 11:43:52.791  1702  2096 V MD#SSM  : ReadyStateHandler msg = RELEASE TRIGGER
+02-07 11:43:52.791  1702  2096 V MD#SSM  : ReadyStateHandler MSG_C_RELEASE_TRIG 
+02-07 11:43:52.791  1702  2096 V MD#SSMB : New-> READY
+02-07 11:43:52.791  1702  2135 D MD#LNT  :  handleMessage msg.what =4
+02-07 11:43:52.791  1702  2135 D MD#LNT  :  stop Led Notifications 
+02-07 11:43:52.791   531  8014 D NuPlayerDriver: notifyListener_l(0xf313b280), (1, 0, 0, -1), loop setting(0, 0)
+02-07 11:43:52.791  1702  2137 D MD#LNT  :  goodReadNotifyThread green off
+02-07 11:43:52.791  1702  2137 I se_hal  : not bypass led
+02-07 11:43:52.791  1702  2137 D MD#LNT  :  goodReadNotifyThread
+02-07 11:43:52.792   938  1027 D WindowManager: releaseTrigger
+02-07 11:43:52.798   531   531 D NuPlayerDriver: start(0xf313b280), state is 4, eos is 0
+02-07 11:43:52.799  7824  8017 V Logger  : XT21: 2024-02-07 11:43:52 KEY CODE onKeyUp: 293
+02-07 11:43:52.800   404   473 D APM_AudioPolicyManager: stopOutput() output 13, stream 3, session 113
+02-07 11:43:52.800   404   473 V APM::AudioOutputDescriptor: changeRefCount() stream 3, count 0
+02-07 11:43:52.801   531  8014 I GenericSource: start
+02-07 11:43:52.809   531  8020 I OMXClient: IOmx service obtained
+02-07 11:43:52.809   545  1157 I OMXMaster: makeComponentInstance(OMX.MTK.AUDIO.DECODER.MP3) in omx@1.0-service process
+02-07 11:43:52.810   545  1157 D MtkOmxMp3Dec: JB MtkOmxMp3Dec::MtkOmxMp3Dec this= 0xe9e5a400
+02-07 11:43:52.810   545  1157 D MtkOmxMp3Dec: JB MtkOmxMp3Dec::InitAudioParams(MP3)
+02-07 11:43:52.811   545  8021 D MtkOmxAudioDecBase: PollFd.fd = 18 
+02-07 11:43:52.813   545  1157 E OMXNodeInstance: setConfig(0xe9e5a404:MTK.DECODER.MP3, ConfigPriority(0x6f800002)) ERROR: Undefined(0x80001001)
+02-07 11:43:52.813   531  8020 I ACodec  : codec does not support config priority (err -2147483648)
+02-07 11:43:52.813   545  1157 E OMXNodeInstance: getConfig(0xe9e5a404:MTK.DECODER.MP3, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+02-07 11:43:52.814   531  8020 I MediaCodec: MediaCodec will operate in async mode
+02-07 11:43:52.815   545  8021 D MtkOmxAudioDecBase: # Got general command (OMX_CommandStateSet)
+02-07 11:43:52.815   545  8021 D MtkOmxAudioDecBase: wait on mInPortAllocDoneSem(0), mOutPortAllocDoneSem(0)!!
+02-07 11:43:52.817   370   370 W AshmemAllocator: ashmem_create_region(65536) returning hidl_memory(0x7d15a2c100, 65536)
+02-07 11:43:52.820   370   370 I chatty  : uid=1000(system) allocator@1.0-s identical 2 lines
+02-07 11:43:52.821   370   370 W AshmemAllocator: ashmem_create_region(65536) returning hidl_memory(0x7d15a2c100, 65536)
+02-07 11:43:52.824   370   370 W AshmemAllocator: ashmem_create_region(4608) returning hidl_memory(0x7d15a2c100, 4608)
+02-07 11:43:52.826   370   370 I chatty  : uid=1000(system) allocator@1.0-s identical 2 lines
+02-07 11:43:52.828   370   370 W AshmemAllocator: ashmem_create_region(4608) returning hidl_memory(0x7d15a2c100, 4608)
+02-07 11:43:52.829   545  8021 D MtkOmxAudioDecBase: # Got general command (OMX_CommandStateSet)
+02-07 11:43:52.829   545  8021 D MtkOmxAudioDecBase: state changes to OMX_StateExecuting
+02-07 11:43:52.832   545  8022 D MtkOmxMp3Dec: JB +InitMp3Decoder
+02-07 11:43:52.832   545  8022 D MtkOmxMp3Dec: -InitMp3Decoder
+02-07 11:43:52.832   545  8022 D MtkOmxMp3Dec: isFirst = true
+02-07 11:43:52.836   531  8018 D AudioTrack: set(): 0xf2cf9f80, streamType 3, sampleRate 22050, format 0x1, channelMask 0x1, frameCount 11280, flags #0, notificationFrames 0, sessionId 145, transferType 0, uid 10096, pid 7824
+02-07 11:43:52.840   404   711 D AudioFlinger_Threads: Client defaulted notificationFrames to 3760 for frameCount 11280
+02-07 11:43:52.840   404   711 D AudioFlinger: track(0xec0a1600): mIsOut 1, mFrameCount 11280, mSampleRate 22050, mFormat 1, mChannelCount 1, mTrackCount 13, thread 0xecd03d00, sessionId 145
+02-07 11:43:52.840   404   711 D AudioFlinger: track(0xec0a1600): mFastIndex -1, mStreamType 3, mName -1
+02-07 11:43:52.846   531  8018 D AudioTrack: createTrack_l: 0xf2cf9f80, mCblk = 0xf1a80000, mLatency = 563, mAfLatency = 52, frameCount = 11280, mSampleRate = 22050, mFlags = 0, mReqFrameCount = 11280, mNotificationFramesAct = 3760
+02-07 11:43:52.846   531  8018 D AudioTrack: setVolume(): 0xf2cf9f80, left = 1.000000, right = 1.000000
+02-07 11:43:52.846   531  8018 D AudioTrack: setVolume(): 0xf2cf9f80, left = 1.000000, right = 1.000000
+02-07 11:43:52.846   531  8018 E AudioTrack: start(): 0xf2cf9f80, mState = 1
+02-07 11:43:52.846   404   711 D APM_AudioPolicyManager: startOutput() output 13, stream 3, session 145
+02-07 11:43:52.846   404   711 V APM::AudioOutputDescriptor: changeRefCount() stream 3, count 1
+02-07 11:43:52.848   531  8014 D NuPlayerDriver: notifyListener_l(0xf313b280), (6, 0, 0, -1), loop setting(0, 0)
+02-07 11:43:52.857   545  8022 D MtkOmxMp3Dec: MP3 EOS received, TS=0
+02-07 11:43:52.858   531  8019 I NuPlayerDecoder: [audio] saw output EOS
+02-07 11:43:52.859   531  8018 D AudioTrack: stop(): 0xf2cf9f80, mState = 0
+02-07 11:43:52.859   531  8018 D AudioTrack: stop() called with 6959 frames delivered
+02-07 11:43:52.859   531  8018 D AudioTrack: audiotrack 0xf2cf9f80 stop done
+02-07 11:43:52.862   516   538 D AAL     : 02-07 11:43:52.794 BL= 787,ESS= 256, 02-07 11:43:52.811 BL= 786,ESS= 256, 02-07 11:43:52.828 BL= 785,ESS= 256, 02-07 11:43:52.845 BL= 786,ESS= 256, 02-07 11:43:52.862 BL= 787,ESS= 256, 
+02-07 11:43:52.867   404   725 D MtkAudioLoud: +close()
+02-07 11:43:52.867   404   725 D MtkAudioLoud: mCustScene = , size = 21 len = 0
+02-07 11:43:52.867   404   725 D MtkAudioLoud: loadParameter HIT Cache Type [5], Scene []
+02-07 11:43:52.867   404   725 D MtkAudioLoud: mIsZeroCoeff 1 mFilterType 5
+02-07 11:43:52.867   404   725 D MtkAudioLoud: setParameter 513 mInitParam.Initial_State 2
+02-07 11:43:52.867   404   725 D MtkAudioLoud: +open()
+02-07 11:43:52.867   404   725 D MtkAudioLoud: -open() result 0
+02-07 11:43:52.867   404   725 D MtkAudioLoud: +change2Normal()
+02-07 11:43:52.867   404   725 D MtkAudioLoud: -change2Normal()
+02-07 11:43:52.948   516   538 D AAL     : 02-07 11:43:52.879 BL= 788,ESS= 256, 02-07 11:43:52.914 BL= 789,ESS= 256, 02-07 11:43:52.914 BL= 790,ESS= 256, 02-07 11:43:52.931 BL= 791,ESS= 256, 02-07 11:43:52.948 BL= 792,ESS= 256, 
+02-07 11:43:53.034   516   538 D AAL     : 02-07 11:43:52.965 BL= 793,ESS= 256, 02-07 11:43:52.982 BL= 794,ESS= 256, 02-07 11:43:52.999 BL= 795,ESS= 256, 02-07 11:43:53.016 BL= 796,ESS= 256, 02-07 11:43:53.034 BL= 797,ESS= 256, 
+02-07 11:43:53.068   516   538 D AAL     : 02-07 11:43:53.051 BL= 798,ESS= 256, 
+02-07 11:43:53.174   531  8014 D NuPlayerDriver: notifyListener_l(0xf313b280), (2, 0, 0, -1), loop setting(0, 0)
+02-07 11:43:53.175   531  8018 D AudioTrack: pause(): 0xf2cf9f80, mState = 1
+02-07 11:43:53.179   531   531 D NuPlayerDriver: reset(0xf313b280) at state 6
+02-07 11:43:53.180   531   531 D NuPlayerDriver: notifyListener_l(0xf313b280), (8, 0, 0, -1), loop setting(0, 0)
+02-07 11:43:53.182   531  8018 D AudioTrack: pause(): 0xf2cf9f80, mState = 1
+02-07 11:43:53.182   531  8018 D AudioTrack: stop(): 0xf2cf9f80, mState = 4
+02-07 11:43:53.182   545  8021 D MtkOmxAudioDecBase: # Got general command (OMX_CommandFlush)
+02-07 11:43:53.184   545  8021 D MtkOmxAudioDecBase: # Got general command (OMX_CommandStateSet)
+02-07 11:43:53.184   545  8021 D MtkOmxAudioDecBase: # Got general command (OMX_CommandStateSet)
+02-07 11:43:53.186   404   725 D AudioFlinger_Threads: enforc flush
+02-07 11:43:53.188   545  1426 D MtkOmxMp3Dec: JB ~MtkOmxMp3Dec this= 0xe9e5a400
+02-07 11:43:53.188   545  1426 D MtkOmxMp3Dec: component has been DeInit before,return.
+02-07 11:43:53.190   531  8014 D NuPlayer: audio shutdown completed
+02-07 11:43:53.193   531  8014 I GenericSource: GenericSource stop mp3/alac TOC!
+02-07 11:43:53.193   531  8014 E GenericSource: stop TOC fail,maybe TOC not Enabled or other reason.
+02-07 11:43:53.194   531  8014 D NuPlayerDriver: notifyResetComplete(0xf313b280)
+02-07 11:43:53.195   531   531 D NuPlayerDriver: reset(0xf313b280) at state 0
+02-07 11:43:53.195   531   531 W AMessage: failed to post message as target looper for handler 0 is gone.
+02-07 11:43:53.196   528  1117 D TableOfContentThread: ~TableOfContentThread 0x7e1353f808!
+02-07 11:43:53.196   528  1117 D TableOfContentThread: stopTOCThread 0x7e1353f808
+02-07 11:43:53.199  7824  7848 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+02-07 11:43:53.199  7824  7848 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+02-07 11:43:53.199   531   531 D AudioTrack: ~AudioTrack(): 0xf2cf9f80
+02-07 11:43:53.199   531   531 D AudioTrack: stop(): 0xf2cf9f80, mState = 4
+02-07 11:43:53.200  7824  7848 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+02-07 11:43:53.200  7824  7848 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+02-07 11:43:53.268   404   473 D APM_AudioPolicyManager: stopOutput() output 13, stream 3, session 145
+02-07 11:43:53.268   404   473 V APM::AudioOutputDescriptor: changeRefCount() stream 3, count 0
+02-07 11:43:53.268   404   725 D MtkAudioLoud: +close()
+02-07 11:43:53.268   404   725 D MtkAudioLoud: -close()
+02-07 11:43:53.584   938   956 V WindowOrientationListener: Proposed rotation changed!  proposedRotation=0, oldProposedRotation=-1
+02-07 11:43:53.584   938   956 I WindowManager: rotationForOrientationLw.java:deviceName: m71
+02-07 11:43:54.598   938  1041 E WifiVendorHal: getWifiLinkLayerStats(l.937) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+02-07 11:43:56.180   372   706 D AudioALSAStreamOut: standby(), flag 6
+02-07 11:43:56.180   372   706 D AudioALSAStreamOut: standbyStreamOut(), flag 6
+02-07 11:43:56.180   372   706 D AudioALSAStreamOut: close(), flags 6
+02-07 11:43:56.180   372   706 D AudioALSAPlaybackHandlerNormal: +close(), flag 6, mDevice = 0x2
+02-07 11:43:56.180   372   706 D AudioVoiceUIDL: [SetInputStandBy] ReadRefFromRing to exit? (0) 
+02-07 11:43:56.180   372   706 D AudioALSAHardwareResourceManager: +stopOutputDevice(), mOutputDevices = 0x2, mStartOutputDevicesCount = 1
+02-07 11:43:56.180   372   706 D AudioALSADeviceConfigManager: ApplyDeviceTurnoffSequenceByName(), DeviceName = ext_speaker_output descriptor->DeviceStatusCounter = 1
+02-07 11:43:56.189   372   706 D AudioALSADeviceConfigManager: ApplyDeviceTurnoffSequenceByName(), DeviceName = speaker_output descriptor->DeviceStatusCounter = 1
+02-07 11:43:56.190   372   706 D AudioALSAStreamManager: speakerStatusChangeCb(), status = 1
+02-07 11:43:56.191   372   706 D AudioALSAPlaybackHandlerBase: -closePcmDriver(), mPcm = 0x0
+02-07 11:43:56.191   372   706 D AudioALSAPlaybackHandlerNormal: SetLowJitterMode(), bypass low jitter mode, bEnable = 0, device = 0x2, SampleRate = 48000
+02-07 11:43:56.191   372   706 D AudioALSAPlaybackHandlerBase: DestroyAurisysLibManager()
+02-07 11:43:56.191   372   706 D aurisys_lib_handler: aurisys_arsi_destroy_handler(), lib_name mtk_bessound, 0xee388c40, arsi_destroy_handler, arsi_handler = 0xee3b7980, retval = 0
+02-07 11:43:56.191   372   706 D aurisys_lib_manager: delete_aurisys_lib_manager(), manager 0xf09778c0
+02-07 11:43:56.191   372   706 D AudioALSAPlaybackHandlerNormal: -close()
+02-07 11:43:57.615   938  1041 E WifiVendorHal: getWifiLinkLayerStats(l.937) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+02-07 11:43:57.808   412   440 I BufferQueueProducer: [com.skynet.rnapp.gascms/com.rnapp.MainActivity#1](this:0x7597b8c800,id:73,api:1,p:7824,c:412) queueBuffer: fps=2.85 dur=5257.16 max=5001.70 min=10.24
+02-07 11:43:57.815   412   412 I SurfaceFlinger: [Built-in Screen (type:0)] fps:2.857578,dur:5249.20,max:4994.08,min:16.52
+02-07 11:43:58.475   565   581 D ApmSession: Connect
+02-07 11:43:58.476   343   343 W hwservicemanager: getTransport: Cannot find entry vendor.mediatek.hardware.apmonitor@1.0::IAPMonitorService/default in either framework or device manifest.
+02-07 11:43:58.477   565   581 D ApmSession: Connect: false
+02-07 11:43:58.477   565   581 D ApmNative: apmIsKpiEnabled2: type = 54, ret = 0
+02-07 11:44:00.000   938  1025 E MtkDataShapingUtils: Exception openLteGateByDataShaping  in java.lang.NullPointerException: null receiver
+02-07 11:44:00.001   938  1025 W System.err: java.lang.NullPointerException: null receiver
+02-07 11:44:00.001   938  1025 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+02-07 11:44:00.001   938  1025 W System.err: 	at com.mediatek.server.MtkDataShaping.openLteGateByDataShaping(MtkDataShaping.java:36)
+02-07 11:44:00.001   938  1025 W System.err: 	at com.android.server.AlarmManagerService.deliverAlarmsLocked(AlarmManagerService.java:3629)
+02-07 11:44:00.001   938  1025 W System.err: 	at com.android.server.AlarmManagerService$AlarmThread.run(AlarmManagerService.java:3807)
+02-07 11:44:00.005   938   938 W ActivityManager: system config--set foreground package-->com.mobydata.advancesettings
+02-07 11:44:00.005   938   938 W ActivityManager: system config--set foreground package-->com.mobydata.scansettings
+02-07 11:44:00.005   938   938 W ActivityManager: system config--set foreground package-->com.mobydata.database
+02-07 11:44:00.005   938   938 W ActivityManager: system config--set foreground package-->com.mobydata.service
+02-07 11:44:00.009   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.advancesettings
+02-07 11:44:00.009   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.scansettings
+02-07 11:44:00.009   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.database
+02-07 11:44:00.009   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.service
+02-07 11:44:00.011   384   384 E IMGMemtrackHAL: GetGLMemtrackRecords: Subtracting per-pid stats from global stats would wrap. Clamping global stats to zero.
+02-07 11:44:00.012   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.advancesettings
+02-07 11:44:00.012   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.scansettings
+02-07 11:44:00.012   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.database
+02-07 11:44:00.012   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.service
+02-07 11:44:00.015   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.advancesettings
+02-07 11:44:00.015   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.scansettings
+02-07 11:44:00.016   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.database
+02-07 11:44:00.016   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.service
+02-07 11:44:00.019   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.advancesettings
+02-07 11:44:00.019   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.scansettings
+02-07 11:44:00.019   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.database
+02-07 11:44:00.020   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.service
+02-07 11:44:00.023   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.advancesettings
+02-07 11:44:00.023   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.scansettings
+02-07 11:44:00.024   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.database
+02-07 11:44:00.024   938  3052 W ActivityManager: system config--set foreground package-->com.mobydata.service
+02-07 11:44:00.029   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.advancesettings
+02-07 11:44:00.029   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.scansettings
+02-07 11:44:00.030   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.database
+02-07 11:44:00.030   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.service
+02-07 11:44:00.033   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.advancesettings
+02-07 11:44:00.033   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.scansettings
+02-07 11:44:00.033   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.database
+02-07 11:44:00.033   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.service
+02-07 11:44:00.035   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.advancesettings
+02-07 11:44:00.036   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.scansettings
+02-07 11:44:00.036   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.database
+02-07 11:44:00.036   938  7429 W ActivityManager: system config--set foreground package-->com.mobydata.service
+02-07 11:44:00.011   384   384 I chatty  : uid=1000(system) memtrack@1.0-se identical 5 lines
+02-07 11:44:00.011   384   384 E IMGMemtrackHAL: GetGLMemtrackRecords: Subtracting per-pid stats from global stats would wrap. Clamping global stats to zero.
+02-07 11:44:00.042   412   440 I BufferQueueProducer: [StatusBar#0](this:0x759a4dd000,id:3,api:1,p:1096,c:412) queueBuffer: fps=0.21 dur=37748.01 max=37640.31 min=10.72
+02-07 11:44:00.061   412   412 I SurfaceFlinger: [Built-in Screen (type:0)] fps:0.445134,dur:2246.52,max:2246.52,min:2246.52
+02-07 11:44:00.094   384   384 E IMGMemtrackHAL: GetGLMemtrackRecords: Subtracting per-pid stats from global stats would wrap. Clamping global stats to zero.
+02-07 11:44:00.094   384   384 I chatty  : uid=1000(system) memtrack@1.0-se identical 5 lines
+02-07 11:44:00.094   384   384 E IMGMemtrackHAL: GetGLMemtrackRecords: Subtracting per-pid stats from global stats would wrap. Clamping global stats to zero.
+02-07 11:44:00.094   384   384 W IMGMemtrackHAL: hal_get_memory: memtrack cache rebuild was required
+02-07 11:44:00.633   938  1041 E WifiVendorHal: getWifiLinkLayerStats(l.937) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+02-07 11:44:01.382   559   559 I thermal_repeater: [recvMdThermalInfo] ret=28, strLen=127,  2, 32767, -127, 0, 32767, 0
+02-07 11:44:02.429  1702  8011 I se_hal  :  | ********************* Eloop timeout
+02-07 11:44:02.429  1702  8011 I se_hal  :  | ********************* Eloop timeout | ISP stop
+02-07 11:44:02.429  1702  8011 D ScanEngine#Proxy: stopPreview
+02-07 11:44:02.429   403   403 I scanpass: Stop Enter
+02-07 11:44:02.430  1594  1594 I ADB_SERVICES: fdevent_loop length=1
+02-07 11:44:02.431  1594  1594 I ADB_SERVICES: local_socket_flush_outgoing read_data=38602
+02-07 11:44:02.431   403  8010 I scanpass: main thread exit and set isRealExit to 1
+02-07 11:44:02.432   403   403 I scanpass: Stop - isRealExit = 1, count = 11
+02-07 11:44:02.432   403   403 W ifunc_cam: [_disable] WARNING: [0x0]:TOP force HW abort reset!
+02-07 11:44:02.433   403  8008 W path_cam: [dequeueBuf] WARNING: waitBufRdy: VF_EN=0, dma(0x0)
+02-07 11:44:02.433   403  8008 W NormalPipe: [ispDequeThread] WARNING: deqThread leave:dequeResponse already stopped
+02-07 11:44:02.433   403   403 I scanpass: NP abort
+02-07 11:44:02.435   403   403 I scanpass: NP uninit
+02-07 11:44:02.436  1702  8011 I se_hal  :  | ********************* | Eloop thread stop
+02-07 11:44:03.651   938  1041 E WifiVendorHal: getWifiLinkLayerStats(l.937) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+02-07 11:44:06.670   938  1041 E WifiVendorHal: getWifiLinkLayerStats(l.937) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+02-07 11:44:06.872   938  1115 D AES     : AEEIOCTL_GET/SET_SF_STATE IOCTL,cmd= 1074294797, lParam=0. 
+02-07 11:44:06.872   938  1115 D AES     : AEEIOCTL_RT_MON_Kick IOCTL,cmd= 2147774474, lParam=300. 
+02-07 11:44:09.689   938  1041 E WifiVendorHal: getWifiLinkLayerStats(l.937) failed {.code = ERROR_NOT_SUPPORTED, .description = }

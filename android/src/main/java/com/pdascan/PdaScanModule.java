@@ -88,6 +88,7 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
           params);
     }
     public PdaScanModule(ReactApplicationContext reactContext) {
+      Log.i("PdaScannerPlugin", "PdaScanModule start");
         super(reactContext);
         this.reactContext = reactContext;
         IntentFilter xmIntentFilter = new IntentFilter();
